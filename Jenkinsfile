@@ -12,5 +12,10 @@ pipeline {
         sh 'echo "Hi"'
       }
     }
+    stage('Build') {
+      steps {
+        sh 'mvn -version'
+      }
+    }
   }
 }

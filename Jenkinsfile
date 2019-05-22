@@ -1,14 +1,10 @@
 pipeline {
-  agent {
-    node {
-      label 'build'
-    }
-
-  }
+  agent none
   stages {
     stage('Pipeline Start') {
       steps {
         echo 'Printed'
+        sh 'echo "Hi"'
       }
     }
   }
